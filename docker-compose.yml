@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+    container_name: YOUR_PROJECT_NAME
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: YOUR_PORT
+      DATABASE_URL: ${DATABASE_URL:-YOUR_DATABASE_URL}
+    ports:
+      - "YOUR_PORT:YOUR_PORT"
+
+# TODO:
+# Добавьте database/cache/reverse-proxy при необходимости.

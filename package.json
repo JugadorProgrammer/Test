@@ -1,0 +1,16 @@
+{
+  "name": "YOUR_PROJECT_NAME",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TODO: project description",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "lint": "echo \"TODO: configure linter\"",
+    "test": "node tests/smoke.test.js",
+    "build": "node scripts/build-placeholder.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
