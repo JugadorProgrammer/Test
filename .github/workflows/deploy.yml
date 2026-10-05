@@ -1,0 +1,32 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy placeholder
+        run: |
+          echo "TODO: configure real deployment"
+          echo "TODO: add SERVER_HOST"
+          echo "TODO: add SERVER_USER"
+          echo "TODO: add SSH_PRIVATE_KEY"
+          echo "TODO: add real deploy command"
+
+      # TODO: replace the placeholder above with your real deployment.
+      # Example future secrets:
+      #   ${{ secrets.SERVER_HOST }}
+      #   ${{ secrets.SERVER_USER }}
+      #   ${{ secrets.SSH_PRIVATE_KEY }}

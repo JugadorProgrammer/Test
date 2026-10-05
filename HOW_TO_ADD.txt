@@ -1,0 +1,16 @@
+Добавь папку .github из этого архива в корень репозитория.
+
+Итоговая структура:
+
+.github/
+└── workflows/
+    ├── ci.yml
+    └── deploy.yml
+
+После этого выполни:
+
+git add .github
+git commit -m "Add GitHub Actions CI/CD"
+git push
+
+Затем открой вкладку Actions на GitHub.
